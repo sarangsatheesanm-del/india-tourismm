@@ -1,56 +1,68 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Tourism in India</title>
     <style>
     .box {
-      background-image: url("images/Taj mahal.jpeg");
-      background-size: cover; /* Fit the image */
+      background-image: url("images/Taj_Mahal_(Edited).jpeg");
+      background-size: cover;
       background-position: center;
-      height: 500px;
+      min-height: 500px;
       padding: 20px;
+      /* Overlay for better text readability */
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    h1, h2, p, ul, a {
+      text-shadow: 1px 1px 6px #000;
     }
     </style>
 </head>
 <body>
     <div class="box">
-     <h1 style="color: brown;">Explore the Beauty of Indian Tourism</h1>
-
-     <div>
-      <p style="color: white;"><i>
-         India is one of the most popular tourist destinations in the world, 
-         known for its rich culture, heritage, and natural beauty. 
-         From the snowy mountains of the Himalayas to the sunny beaches of Goa, 
-         every corner of India offers a unique travel experience.
-         </i>
-      </p>
-     </div>
-
-     <div>
-      <h2 style="color: white;">Top Tourist Attractions</h2>
-      <ul style="color: white;">
-          <li>Taj Mahal, Agra</li>
-          <li>Jaipur - The Pink City</li>
-          <li>Kerala Backwaters</li>
-          <li>Goa Beaches</li>
-          <li>Kashmir Valley</li>
-      </ul>
-      <img src="images/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg" style="width: 100px;">
-      <img src="images/hawa-mahal-jaipur3.jpg" style="width: 100px;">
-      <img src="images/shutterstock2542346155-cropped.jpg" style="width: 100px;">
-      <img src="images/Taj_Mahal_(Edited).jpeg" style="width: 100px;">
-      <img src="images/Vale-of-Kashmir-Jammu-and-India.jpg" style="width: 100px;">
-     </div>
-     <h2 style="color: white;">Useful Links</h2>
-     <p style="color: white;">
-         Learn more about Indian tourism from these official websites:
-     </p>
-     <a href="https://www.incredibleindia.org" target="_blank">Incredible India</a><br>
-     <a href="https://www.tourism.gov.in" target="_blank">Ministry of Tourism, India</a>
+      <div class="overlay"></div>
+      <div class="content">
+        <h1 style="color: brown;">Explore the Beauty of Indian Tourism</h1>
+        <div>
+          <p style="color: white;"><i>
+            India is one of the most popular tourist destinations in the world, 
+            known for its rich culture, heritage, and natural beauty. 
+            From the snowy mountains of the Himalayas to the sunny beaches of Goa, 
+            every corner of India offers a unique travel experience.
+          </i></p>
+        </div>
+        <div>
+          <h2 style="color: white;">Top Tourist Attractions</h2>
+          <ul style="color: white;">
+            <li>Taj Mahal, Agra</li>
+            <li>Jaipur - The Pink City</li>
+            <li>Kerala Backwaters</li>
+            <li>Goa Beaches</li>
+            <li>Kashmir Valley</li>
+          </ul>
+          <img src="images/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg" style="width: 100px;" alt="Taj Mahal">
+          <img src="images/hawa-mahal-jaipur3.jpg" style="width: 100px;" alt="Hawa Mahal Jaipur">
+          <img src="images/shutterstock2542346155-cropped.jpg" style="width: 100px;" alt="Kerala Backwaters">
+          <img src="images/Taj_Mahal_(Edited).jpeg" style="width: 100px;" alt="Taj Mahal">
+          <img src="images/Vale-of-Kashmir-Jammu-and-India.jpg" style="width: 100px;" alt="Kashmir Valley">
+        </div>
+        <h2 style="color: white;">Useful Links</h2>
+        <p style="color: white;">
+          Learn more about Indian tourism from these official websites:
+        </p>
+        <a href="https://www.incredibleindia.org" target="_blank" style="color: white;">Incredible India</a><br>
+        <a href="https://www.tourism.gov.in" target="_blank" style="color: white;">Ministry of Tourism, India</a>
+      </div>
     </div>
 </body>
 </html>
-
-
